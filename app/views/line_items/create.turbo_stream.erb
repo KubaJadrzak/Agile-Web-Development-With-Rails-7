@@ -1,0 +1,11 @@
+<%= turbo_stream.replace 'notice' do %>
+  <%= render partial: 'store/notice', locals: {notice: @notice } %>
+<% end %>
+
+<%= turbo_stream.replace 'cart' do %>
+  <%= render partial: 'layouts/cart', locals: {cart: @cart} %>
+<% end %>
+
+<%= turbo_stream.replace 'counter' do %>
+  <%= render partial: 'layouts/counter', locals: {counter: 0} %>
+<% end %>
